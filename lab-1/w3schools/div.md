@@ -1,0 +1,16 @@
+Consider the following code:
+<div style='width:200px;margin:auto'>
+  <h2>London</h2>
+</div>
+How will the DIV element be aligned?
+
+Left aligned
+
+True or False. You cannot align DIV elements side by side
+
+True
+
+
+
+One of the following statements is true about the DIV element, which one?
+By default, DIV elements come with a yellow background
