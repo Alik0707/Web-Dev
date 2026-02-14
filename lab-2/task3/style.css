@@ -23,7 +23,11 @@ main {
     margin: 0 auto;
     padding: 60px 20px;
 }
-
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
 /* Hero */
 .hero {
     text-align: center;
@@ -82,7 +86,7 @@ button {
 
 .card.recommended {
     border: 2px solid #0969da;
-    box-shadow: 0 8px 24px rgba(149,157,165,0.2);
+    box-shadow: 0 4px 24px rgba(149,157,165,0.2);
 }
 
 .badge {

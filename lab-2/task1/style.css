@@ -121,18 +121,4 @@ hr {
     color: #1c1e21;
 }
 
-/* Адаптивность для мобильных */
-@media (max-width: 900px) {
-    .main-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .brand-section {
-        width: 100%;
-        padding-right: 0;
-        margin-bottom: 40px;
-    }
-    .brand-section p {
-        font-size: 24px;
-    }
-}
+

@@ -153,10 +153,3 @@ input {
     margin-top: 20px;
     opacity: 0.5;
 }
-
-/* Адаптивность */
-@media (max-width: 800px) {
-    .hero-section {
-        display: none;
-    }
-}
