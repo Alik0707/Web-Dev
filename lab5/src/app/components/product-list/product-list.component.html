@@ -1,0 +1,18 @@
+<section class="product-list-section">
+  @if (displayedProducts.length > 0) {
+    <div class="product-grid">
+      @for (product of displayedProducts; track product.id) {
+        <app-product-item
+          [product]="product"
+          (delete)="onDeleteProduct($event)"
+        />
+      }
+    </div>
+  } @else {
+    <div class="empty-state">
+      <div class="empty-icon">📭</div>
+      <h3>No products in this category</h3>
+      <p>All products have been removed.</p>
+    </div>
+  }
+</section>

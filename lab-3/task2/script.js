@@ -7,6 +7,7 @@ taskInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') addTask();
 });
 
+
 function addTask() {
     const text = taskInput.value.trim();
     if (text === '') return;
@@ -24,7 +25,7 @@ function addTask() {
     span.textContent = text;
 
     const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
+    deleteBtn.textContent = 'del';
     deleteBtn.className = 'delete-btn';
     deleteBtn.addEventListener('click', () => {
         li.remove();

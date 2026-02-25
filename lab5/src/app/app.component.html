@@ -1,0 +1,65 @@
+<div class="app-shell">
+  <!-- Top Nav -->
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="logo-k">K</span>Store
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle" (click)="toggleTheme()" [title]="isDark ? 'Light mode' : 'Dark mode'">
+          {{ isDark ? '☀️' : '🌙' }}
+        </button>
+        <a class="nav-kaspi-link" href="https://kaspi.kz" target="_blank" rel="noopener noreferrer">
+          Visit Kaspi.kz →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Sidebar: Categories -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Categories</h2>
+      <ul class="category-list">
+        @for (category of categories; track category.id) {
+          <li>
+            <button
+              class="category-btn"
+              [class.active]="selectedCategory?.id === category.id"
+              (click)="selectCategory(category)"
+            >
+              {{ category.name }}
+            </button>
+          </li>
+        }
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      @if (selectedCategory) {
+        <header class="content-header">
+          <h1 class="content-title">{{ selectedCategory.name }}</h1>
+          <span class="product-count">{{ categoryProducts.length }} products</span>
+        </header>
+        <app-product-list [products]="categoryProducts" />
+      } @else {
+        <div class="welcome-state">
+          <div class="welcome-icon">🛍️</div>
+          <h2>Welcome to KStore</h2>
+          <p>Select a category from the sidebar to explore our premium tech products.</p>
+        </div>
+      }
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>
+      Products sourced from
+      <a href="https://kaspi.kz" target="_blank" rel="noopener noreferrer">Kaspi.kz</a>.
+      Built with Angular 17.
+    </p>
+  </footer>
+</div>

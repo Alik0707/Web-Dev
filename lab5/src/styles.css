@@ -1,0 +1,74 @@
+/* ── Google Fonts ─────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,300&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* ── Design Tokens ────────────────────────────────────── */
+:root {
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Light Theme */
+  --bg: #f8f7f4;
+  --bg-rgb: 248, 247, 244;
+  --card-bg: #ffffff;
+  --image-bg: #f3f2ef;
+  --text: #1a1917;
+  --text-muted: #6b6860;
+  --border: #e8e6e1;
+  --accent: #f97316;
+  --accent-dark: #ea6c0a;
+}
+
+[data-theme='dark'] {
+  --bg: #0f0e0c;
+  --bg-rgb: 15, 14, 12;
+  --card-bg: #1c1b18;
+  --image-bg: #252420;
+  --text: #f2f0eb;
+  --text-muted: #9b9890;
+  --border: #2e2d29;
+  --accent: #fb923c;
+  --accent-dark: #f97316;
+}
+
+/* ── Reset ────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s, color 0.3s;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}

@@ -1,0 +1,37 @@
+<div class="app-shell">
+  <!-- Top Nav -->
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">
+        <span class="logo-k">K</span>Store
+      </a>
+      <div class="nav-actions">
+        <button class="theme-toggle" (click)="toggleTheme()" [title]="isDark ? 'Light mode' : 'Dark mode'">
+          {{ isDark ? '☀️' : '🌙' }}
+        </button>
+        <a
+          class="nav-kaspi-link"
+          href="https://kaspi.kz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit Kaspi.kz →
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <app-product-list />
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>
+      Products sourced from
+      <a href="https://kaspi.kz" target="_blank" rel="noopener noreferrer">Kaspi.kz</a>.
+      Built with Angular 17.
+    </p>
+  </footer>
+</div>
