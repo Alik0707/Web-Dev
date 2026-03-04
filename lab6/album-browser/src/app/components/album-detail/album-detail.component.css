@@ -1,0 +1,98 @@
+.loading {
+  color: #888;
+  padding: 2rem 0;
+}
+
+.detail h1 {
+  color: #1a1a2e;
+  margin: 1rem 0;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+.btn-back:hover {
+  color: #1a1a2e;
+}
+
+.info {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  line-height: 2;
+}
+
+.edit-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.edit-section label {
+  font-weight: 600;
+  color: #333;
+}
+
+.title-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.95rem;
+  width: 280px;
+}
+
+.title-input:focus {
+  outline: none;
+  border-color: #1a1a2e;
+}
+
+.btn-save {
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  padding: 0.45rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn-save:hover:not(:disabled) {
+  background: #16213e;
+}
+
+.btn-save:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.saved-msg {
+  color: #38a169;
+  font-size: 0.9rem;
+}
+
+.btn-photos {
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn-photos:hover {
+  background: #2c5282;
+}

@@ -1,0 +1,17 @@
+.about h1 {
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  max-width: 500px;
+  line-height: 2;
+}
+
+.card a {
+  color: #1a1a2e;
+}

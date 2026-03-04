@@ -1,0 +1,14 @@
+<button class="btn-back" (click)="goBack()">← Back to Album</button>
+
+<h1>Photos — Album #{{ albumId }}</h1>
+
+<div *ngIf="loading" class="loading">Loading photos...</div>
+
+<div *ngIf="!loading && photos.length === 0" class="empty">No photos found.</div>
+
+<div *ngIf="!loading" class="photo-grid">
+  <div *ngFor="let photo of photos" class="photo-card">
+    <img [src]="'/images/150'" [alt]="photo.title" />
+    <p class="photo-title">{{ photo.title }}</p>
+  </div>
+</div>

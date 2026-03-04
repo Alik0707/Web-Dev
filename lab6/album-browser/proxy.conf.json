@@ -1,0 +1,14 @@
+{
+  "/api": {
+    "target": "http://jsonplaceholder.typicode.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/api": "" }
+  },
+  "/images": {
+    "target": "https://via.placeholder.com",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": { "^/images": "" }
+  }
+}

@@ -1,0 +1,23 @@
+<div *ngIf="loading" class="loading">Loading album...</div>
+
+<div *ngIf="!loading && album" class="detail">
+  <button class="btn-back" (click)="goBack()">← Back to Albums</button>
+
+  <h1>Album #{{ album.id }}</h1>
+
+  <div class="info">
+    <p><strong>User ID:</strong> {{ album.userId }}</p>
+    <p><strong>Title:</strong> {{ album.title }}</p>
+  </div>
+
+  <div class="edit-section">
+    <label for="titleInput">Edit Title</label>
+    <input id="titleInput" [(ngModel)]="editTitle" class="title-input" />
+    <button class="btn-save" (click)="saveAlbum()" [disabled]="saving">
+      {{ saving ? 'Saving...' : 'Save' }}
+    </button>
+    <span *ngIf="saved" class="saved-msg">✓ Saved!</span>
+  </div>
+
+  <button class="btn-photos" (click)="goToPhotos()">View Photos</button>
+</div>
